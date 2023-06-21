@@ -1,0 +1,15 @@
+<!-- <button mat-raised-button (click)="navigateToDataCreate()"> Novo Cadastro</button> -->
+<mat-card>
+    <mat-card-title>Novo cadastro</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="data.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="data.cpf" name="cpf">
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="createData()" color="primary"> Salvar</button>
+
+<button mat-raised-button (click)="cancel()"> Cancelar</button>
