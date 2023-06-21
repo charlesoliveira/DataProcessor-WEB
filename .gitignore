@@ -156,3 +156,4 @@ dist
 
 #Angular folder.
 .angular/cached/
+.angular/cache/
