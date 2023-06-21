@@ -1,0 +1,51 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64"> 
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Início
+            </a>
+            <a mat-list-item routerLink="/listarPessoas">
+                <i class="material-icons">
+                    groups
+                </i>
+                Listar Pessoas
+            </a>
+            <a mat-list-item routerLink="/qtdUF">
+                <i class="material-icons">
+                    groups
+                </i>
+                Qtd por Estado
+            </a>
+            <a mat-list-item routerLink="/imc">
+                <i class="material-icons">
+                    groups
+                </i>
+                IMC por idade
+            </a>
+            <a mat-list-item routerLink="/obesidade">
+                <i class="material-icons">
+                    groups
+                </i>
+                % Obesidade
+            </a>
+            <a mat-list-item>
+                <i class="material-icons">
+                    groups
+                </i>
+                Fator RH
+            </a>
+            <a mat-list-item>
+                <i class="material-icons">
+                    groups
+                </i>
+                Doadores
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
